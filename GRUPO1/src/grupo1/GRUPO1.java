@@ -8,6 +8,8 @@ package grupo1;
 import PAQUETE.Deportista;
 import PAQUETE.Doctor;
 
+
+
 /**
  *
  * @author JAIRO PINEDA
@@ -20,22 +22,20 @@ public class GRUPO1 {
     public static void main(String[] args) {
         
         //INSTANCIA DE CLASES
-         Doctor doctor = new Doctor();
-         Deportista deportista = new Deportista();
+         Doctor doctor = new Doctor("Kevin Zelaya","25");
+         Deportista deportista = new Deportista("Jairo pineda","27");
          
          //INSTRUCCION DE IMPRESION DOCTOR
-          System.out.println(doctor.setInformacionProfecion();
-          doctor.imprimirNombre();
-          doctor.imprimirApellido();
-          doctor.imprimirEdad();
-          System.out.println("");
+          System.out.println(doctor);
+          doctor.estableserEdad(30);
+          
+          System.out.println("Jairo Pineda");
           
           //INSTRUCCION DE IMPRESION DEPORTISTA
-          System.out.println(deportista.setInformacionProfecion();
-          deportista.imprimirNombre();
-          deportista.imprimirApellido();
-          deportista.imprimirEdad();
-          System.out.println("");
+          System.out.println(deportista);
+          
+          System.out.println("Kevin ZElaya");
+          deportista.estableserEdad(25);
          
          
          
